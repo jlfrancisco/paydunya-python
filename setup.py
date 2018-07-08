@@ -65,6 +65,10 @@ def readme(filename='README.rst'):
     f.close()
     return text
 
+with open("requirements.txt") as f:
+    reqs = f.read().splitlines()
+
+
 setup(
     name='paydunya',
     version=__import__('paydunya').__version__,
@@ -84,5 +88,5 @@ setup(
         "Topic :: Utilities",
         "License :: OSI Approved :: MIT License",
     ],
-    install_requires=['requests >=2.0'],
+    install_requires=reqs,
 )
