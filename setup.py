@@ -71,7 +71,7 @@ with open("requirements.txt") as f:
 
 setup(
     name='paydunya',
-    version=__import__('paydunya').__version__,
+    version='1.0.6',
     author='PAYDUNYA',
     author_email='paydunya@paydunya.com',
     packages=['paydunya'],
